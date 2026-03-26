@@ -8,11 +8,17 @@
 
 ```
 .
-├── skills/          # 技能与方法论（如研究计划书写作等）
+├── skills/          # 技能与方法论（Manus Skills、研究计划书写作等）
 ├── experiences/     # 备考经验与面试分享
 ├── tips/            # 实用技巧汇总
 └── resources/       # 过去问、出愿日程、参考资料等
 ```
+
+## Skills 一览
+
+| Skill | 说明 | 详情 |
+|-------|------|------|
+| [academic-cold-email](skills/academic-cold-email/) | 自动深度调研教授主页，拟定研究方向，生成中英文套瓷信，归档到 Notion | [README](skills/academic-cold-email/README.md) |
 
 ## 内容涵盖
 
@@ -20,6 +26,7 @@
 - 各校修考笔试与面试经验
 - 出愿时间线与材料准备
 - 过去问整理与解析
+- 套瓷信写作与教授沟通技巧
 - 其他备考技巧与留学生活建议
 
 ## 贡献
