@@ -19,6 +19,7 @@
 | Skill | 说明 | 详情 |
 |-------|------|------|
 | [academic-cold-email](skills/academic-cold-email/) | 自动深度调研教授主页，拟定研究方向，生成中英文套瓷信，归档到 Notion | [README](skills/academic-cold-email/README.md) |
+| [jp-university-admission-notion](skills/jp-university-admission-notion/) | 自动解读募集要项（招生简章），提取关键信息与时间线，归档到 Notion | [README](skills/jp-university-admission-notion/README.md) |
 
 ## 内容涵盖
 
