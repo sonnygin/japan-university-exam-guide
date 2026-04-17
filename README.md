@@ -1,39 +1,51 @@
 # japan-university-exam-guide
 
-📚 日本大学大学院修考情报整理与经验分享
+日本大学大学院申请信息、备考经验与 Manus Skills 的公开整理仓库。
 
-> **本仓库所有内容完全公开、完全免费。** 这里没有任何付费内容、没有引流、没有广告。纯粹是大家互帮互助，把自己走过的路、踩过的坑分享出来，让后来的同学少走弯路。如果这些内容对你有帮助，也欢迎你把自己的经验贡献进来，帮助更多的人。
+> **本仓库内容完全公开、免费可用，并按 MIT 协议开源。** 这里收录的不只是修考经验与资料整理，也包括可直接导入使用的申请辅助 Skill，例如套瓷信生成、募集要项解读，以及围绕目标教授生成研究计划书的教授匹配型 Skill。
 
-## 目录结构
+## 仓库结构
 
-```
+```text
 .
-├── skills/          # 技能与方法论（Manus Skills、研究计划书写作等）
-├── experiences/     # 备考经验与面试分享
-├── tips/            # 实用技巧汇总
-└── resources/       # 过去问、出愿日程、参考资料等
+├── skills/          # 可导入的 Manus Skills（套瓷、募集要项整理、研究计划书等）
+├── experiences/     # 备考经验、面试分享与申请复盘
+├── tips/            # 实用技巧与流程建议
+└── resources/       # 过去问、时间线、参考资料等
 ```
 
 ## Skills 一览
 
+当前仓库中的 Skills 主要面向日本大学院申请过程中的几个高频环节：教授联系、简章整理与研究计划书准备。与过去版本相比，`research-proposal-skill` 已经更新为**教授匹配型研究计划书流程**，其重点不再是单纯生成 proposal 文案，而是先调研教授近年研究方向、判断招生风险、生成唯一可行题目，再进入文献框架、大纲确认与正式写作阶段。
+
 | Skill | 说明 | 详情 |
-|-------|------|------|
-| [academic-cold-email](skills/academic-cold-email/) | 自动深度调研教授主页，拟定研究方向，生成中英文套瓷信，归档到 Notion | [README](skills/academic-cold-email/README.md) |
-| [jp-university-admission-notion](skills/jp-university-admission-notion/) | 自动解读募集要项（招生简章），提取关键信息与时间线，归档到 Notion | [README](skills/jp-university-admission-notion/README.md) |
+| --- | --- | --- |
+| [academic-cold-email](skills/academic-cold-email/) | 自动调研教授主页，拟定研究切入点，并生成中英文套瓷信 | [README](skills/academic-cold-email/README.md) |
+| [jp-university-admission-notion](skills/jp-university-admission-notion/) | 自动解读募集要项，提取关键信息、时间线与门槛条件 | [README](skills/jp-university-admission-notion/README.md) |
+| [research-proposal-skill](skills/research-proposal-skill/) | 围绕目标教授生成教授匹配型研究计划书流程，包含教授调研、唯一题目、文献框架、大纲确认与 Markdown proposal 写作 | [README](skills/research-proposal-skill/README.md) |
 
-## 内容涵盖
+## 内容覆盖范围
 
-- 研究计划书撰写指南
-- 各校修考笔试与面试经验
-- 出愿时间线与材料准备
-- 过去问整理与解析
-- 套瓷信写作与教授沟通技巧
-- 其他备考技巧与留学生活建议
+这个仓库试图覆盖日本大学院申请中最容易信息碎片化、重复劳动最多的部分。一方面，它整理经验、流程与资料；另一方面，也把可复用的方法固化为可导入的 Skill，帮助后来者减少从零试错的成本。
 
-## 贡献
+| 内容类型 | 说明 |
+| --- | --- |
+| 研究计划书相关方法 | 教授匹配、选题、文献框架、proposal 写作与质检 |
+| 教授联系与沟通 | 套瓷信写作、切入点选择与风险判断 |
+| 出愿与修考信息 | 募集要项、材料清单、时间节点与基础门槛 |
+| 经验分享 | 面试、笔试、复盘与准备建议 |
+| 辅助资源 | 过去问、模板、公开资料入口 |
 
-欢迎所有人通过 Issue 或 Pull Request 分享你的经验和情报！无论是一句小提示还是一篇完整的经验帖，都是对后来人莫大的帮助。
+## 如何使用仓库中的 Skill
+
+如果你使用 Manus，一般有两种方式导入这些 Skill。第一种是直接通过 GitHub 仓库导入，这样最省事；第二种是下载仓库后，只上传 `skills/` 下对应的 Skill 文件夹。对多数用户而言，直接进入各个 Skill 的 README 页面，先确认“这个 Skill 适不适合当前任务”，会比一开始就导入全部内容更高效。
+
+对于研究计划书场景，建议先查看 [research-proposal-skill](skills/research-proposal-skill/README.md) 的 README。该 Skill 目前已经采用新的教授匹配型流程，适合你已经有目标教授、并准备认真打磨申请材料的情况。如果你还处于前期联系阶段，则通常应优先使用 `academic-cold-email`。
+
+## 贡献方式
+
+欢迎通过 Issue 或 Pull Request 补充经验、修正文档、更新资料，或者继续改进仓库中的 Skill。无论是增加一条小提示，还是补充一整套经验分享，都会对后续申请者有帮助。
 
 ## License
 
-MIT
+This repository is released under the **MIT License**.
