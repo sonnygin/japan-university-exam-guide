@@ -1,9 +1,9 @@
 ---
-name: academic-proposal-pipeline
-description: Generate a tailored graduate research proposal for Japanese university admission. Research professor webpages, infer the professor's active trajectory, propose one feasible topic aligned with the applicant's strengths, collect supporting literature, build an outline, and write a complete proposal in English or Chinese. Triggered when the user wants a research proposal for a specific professor or a Japanese graduate school application.
+name: research-proposal-skill
+description: Generate a tailored graduate research proposal for Japanese university admission. Research professor webpages, infer the professor's active trajectory, propose one feasible topic aligned with the applicant's strengths, collect supporting literature, build an outline, and write a complete proposal in English or Chinese. Trigger when the user wants a research proposal for a specific professor or a Japanese graduate school application.
 ---
 
-# Academic Proposal Pipeline
+# Research Proposal Skill
 
 Generate a complete research-proposal workflow for Japanese graduate admission. Use this skill when the user wants a **research proposal**, not a cold email.
 
@@ -11,20 +11,20 @@ Generate a complete research-proposal workflow for Japanese graduate admission. 
 
 - **Browser** must be available for deep traversal of professor or lab webpages.
 - The user should provide at least one professor homepage URL.
-- The user may optionally provide PDFs, notes, abstracts, or an existing topic idea.
+- The user may optionally provide PDFs, notes, abstracts, paper lists, or an existing topic idea.
 
 ## Applicant Profile
 
 Before starting, confirm the user has provided the following information. Ask only for missing items.
 
-1. **Applicant Background**: name, school/major/grade, or current status.
+1. **Applicant Background**: name, school, major, grade, or current status.
 2. **Strengths/Highlights**: skills, projects, publications, methods, datasets, internships, or domain experience.
 3. **Professor Information**: one or more professor homepage URLs.
 4. **Proposal Requirements**:
    - academic domain
    - output language (**English** or **中文**)
-   - target word count (default: ~3,000 words)
-5. **Optional Materials**: PDFs, paper lists, literature notes, or topic preferences.
+   - target word count (default: about **3,000 words**)
+5. **Optional Materials**: PDFs, paper lists, literature notes, abstracts, or topic preferences.
 
 If multiple professor URLs are provided in one session, reuse the same applicant profile unless the user updates it.
 
@@ -50,7 +50,7 @@ Open the professor's homepage URL in browser. **Actively click into relevant sub
 
 **Extract and record:**
 - the professor's current active research directions
-- at least 2 representative recent papers with **title, venue, year**
+- at least **2 representative recent papers** with **title, venue, year**
 - methods, datasets, application areas, grants, collaborations, or projects if visible
 - the exact source URL where each key finding was found
 
@@ -105,13 +105,27 @@ Write the full proposal in Markdown.
 - Explicitly connect the applicant's strengths to feasibility.
 - Include **3-5 figure suggestions** at appropriate locations using the format:
   `> **[Figure X Suggestion]** *Title: ...* Content: ...`
-- For PhD-level proposals, aim for **at least 40 references** unless the user requests otherwise.
+- Use a reference scope that matches degree level and requested depth. For **PhD-level proposals**, aim for **at least 40 references** unless the user requests otherwise.
 
 ### Step 6: Quality Check
 
 Read `references/QUALITY_CHECKLIST.md`.
 
 Review the proposal before delivery. Check structure, logical coherence, alignment with the professor, literature coverage, citation consistency, and language consistency. Fix issues before delivering the final Markdown file.
+
+## Default Operating Details
+
+Apply these defaults unless the user gives more specific instructions.
+
+| Item | Default behavior |
+| --- | --- |
+| Target topic count | Generate **1** topic and ask for confirmation |
+| Professor paper extraction | Extract at least **2** representative recent papers |
+| Target word count | About **3,000 words** |
+| Figure suggestions | Insert **3-5** figure suggestions |
+| Reference target | For **PhD-level** proposals, target **40+ references** |
+| Confirmation gates | Confirm once after topic generation and once after outline generation |
+| Output format | Deliver a clean **Markdown** proposal file |
 
 ## Strict Constraints
 
