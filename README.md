@@ -16,7 +16,7 @@
 
 ## Skills 一览
 
-当前仓库中的 Skills 主要面向日本大学院申请过程中的几个高频环节：教授联系、简章整理与研究计划书准备。与过去版本相比，`research-proposal-skill` 已经更新为**教授匹配型研究计划书流程**，其重点不再是单纯生成 proposal 文案，而是先调研教授近年研究方向、判断招生风险、生成唯一可行题目，再进入文献框架、大纲确认与正式写作阶段。
+当前仓库中的 Skills 主要面向日本大学院申请过程中的几个高频环节：教授联系、简章整理与研究计划书准备。其中，`research-proposal-skill` 专注于围绕目标教授生成教授匹配型研究计划书流程，核心步骤包括教授调研、唯一题目拟定、文献框架构建、大纲确认与 Markdown proposal 写作。
 
 | Skill | 说明 | 详情 |
 | --- | --- | --- |
@@ -40,7 +40,7 @@
 
 如果你使用 Manus，一般有两种方式导入这些 Skill。第一种是直接通过 GitHub 仓库导入，这样最省事；第二种是下载仓库后，只上传 `skills/` 下对应的 Skill 文件夹。对多数用户而言，直接进入各个 Skill 的 README 页面，先确认“这个 Skill 适不适合当前任务”，会比一开始就导入全部内容更高效。
 
-对于研究计划书场景，建议先查看 [research-proposal-skill](skills/research-proposal-skill/README.md) 的 README。该 Skill 目前已经采用新的教授匹配型流程，适合你已经有目标教授、并准备认真打磨申请材料的情况。如果你还处于前期联系阶段，则通常应优先使用 `academic-cold-email`。
+对于研究计划书场景，建议先查看 [research-proposal-skill](skills/research-proposal-skill/README.md) 的 README。这个 Skill 适合你已经有目标教授、并准备认真打磨申请材料的情况；如果你还处于前期联系阶段，则通常应优先使用 `academic-cold-email`。
 
 ## 贡献方式
 
